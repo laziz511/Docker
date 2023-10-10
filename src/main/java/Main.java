@@ -1,12 +1,19 @@
 import java.util.Scanner;
 
-
-
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int num1 = in.nextInt();
-        int num2 = in.nextInt();
-        System.out.println(num1+num2);
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Enter two numbers:");
+            int num1 = scanner.nextInt();
+            int num2 = scanner.nextInt();
+            int sum = num1 + num2;
+            System.out.println("Sum: " + sum);
+
+            if (sum == 0) {
+                break;
+            }
+        }
     }
 }
